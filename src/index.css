@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -101,5 +102,28 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .delay-200 {
+    animation-delay: 0.2s;
+  }
+  
+  .delay-300 {
+    animation-delay: 0.3s;
+  }
+  
+  .delay-400 {
+    animation-delay: 0.4s;
+  }
+  
+  .delay-500 {
+    animation-delay: 0.5s;
+  }
+  
+  .delay-1000 {
+    animation-delay: 1s;
   }
 }

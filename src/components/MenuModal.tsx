@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { X, Coffee, Salad, Bread, Wine, Cake } from 'lucide-react';
+import { X, Coffee, Salad, Cookie, Wine, Cake } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 interface MenuModalProps {
@@ -43,7 +43,7 @@ const menuData = {
 const categoryIcons = {
   starters: Salad,
   mainCourse: Coffee,
-  breads: Bread,
+  breads: Cookie,
   beverages: Wine,
   desserts: Cake
 };

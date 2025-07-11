@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { X, Coffee, Salad, Cookie, Wine, Cake } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -52,7 +51,7 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
   const [activeCategory, setActiveCategory] = useState('starters');
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       {/* Overlay */}
       <div 
         className="absolute inset-0 bg-black bg-opacity-60 backdrop-blur-sm animate-fade-in"
@@ -60,12 +59,12 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
       />
       
       {/* Modal */}
-      <div className="relative bg-white rounded-2xl shadow-2xl max-w-4xl w-full mx-4 max-h-[90vh] overflow-hidden animate-scale-in">
+      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-5xl max-h-[95vh] sm:max-h-[90vh] overflow-hidden animate-scale-in">
         {/* Header */}
-        <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white p-6 flex justify-between items-center">
+        <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white p-4 sm:p-6 flex justify-between items-center">
           <div>
-            <h2 className="text-3xl font-bold">Our Menu</h2>
-            <p className="text-red-100">आमचा मेनू</p>
+            <h2 className="text-2xl sm:text-3xl font-bold">Our Menu</h2>
+            <p className="text-red-100 text-sm sm:text-base">आमचा मेनू</p>
           </div>
           <Button
             onClick={onClose}
@@ -78,20 +77,20 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
         </div>
 
         {/* Category Tabs */}
-        <div className="flex overflow-x-auto border-b bg-gray-50 px-4">
+        <div className="flex overflow-x-auto border-b bg-gray-50 px-2 sm:px-4 scrollbar-hide">
           {Object.entries(menuData).map(([category, items]) => {
             const Icon = categoryIcons[category as keyof typeof categoryIcons];
             return (
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`flex items-center space-x-2 px-6 py-4 text-sm font-medium whitespace-nowrap transition-colors border-b-2 ${
+                className={`flex items-center space-x-1 sm:space-x-2 px-3 sm:px-6 py-3 sm:py-4 text-xs sm:text-sm font-medium whitespace-nowrap transition-colors border-b-2 ${
                   activeCategory === category
                     ? 'border-red-500 text-red-600 bg-white'
                     : 'border-transparent text-gray-600 hover:text-red-500'
                 }`}
               >
-                <Icon size={18} />
+                <Icon size={16} className="sm:w-5 sm:h-5" />
                 <span className="capitalize">
                   {category === 'mainCourse' ? 'Main Course' : category}
                 </span>
@@ -101,29 +100,29 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
         </div>
 
         {/* Menu Items */}
-        <div className="p-6 overflow-y-auto max-h-[60vh]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="p-4 sm:p-6 overflow-y-auto max-h-[50vh] sm:max-h-[60vh]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4">
             {menuData[activeCategory as keyof typeof menuData].map((item, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-orange-50 to-red-50 border border-orange-200 rounded-xl p-4 hover:shadow-lg transition-all duration-300 hover:scale-105"
+                className="bg-gradient-to-br from-orange-50 to-red-50 border border-orange-200 rounded-xl p-3 sm:p-4 hover:shadow-lg transition-all duration-300 hover:scale-105"
               >
                 <div className="flex justify-between items-start mb-2">
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-800">{item.name}</h3>
-                    <p className="text-sm text-red-600 font-medium">{item.marathi}</p>
+                    <h3 className="text-base sm:text-lg font-semibold text-gray-800">{item.name}</h3>
+                    <p className="text-xs sm:text-sm text-red-600 font-medium">{item.marathi}</p>
                   </div>
-                  <span className="text-xl font-bold text-green-600">{item.price}</span>
+                  <span className="text-lg sm:text-xl font-bold text-green-600">{item.price}</span>
                 </div>
-                <p className="text-gray-600 text-sm">{item.description}</p>
+                <p className="text-gray-600 text-xs sm:text-sm">{item.description}</p>
               </div>
             ))}
           </div>
         </div>
 
         {/* Footer */}
-        <div className="bg-gray-50 px-6 py-4 text-center border-t">
-          <p className="text-gray-600">
+        <div className="bg-gray-50 px-4 sm:px-6 py-3 sm:py-4 text-center border-t">
+          <p className="text-gray-600 text-sm sm:text-base">
             Call us for orders: <span className="font-semibold text-green-600">+91 98765 43210</span>
           </p>
         </div>

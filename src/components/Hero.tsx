@@ -1,7 +1,8 @@
 
 import { Button } from '@/components/ui/button';
 import { Utensils, Star, Clock } from 'lucide-react';
-
+import { Instagram, Facebook, MessageCircle, MapPin } from "lucide-react";
+import  image2  from './assests/2.png';
 interface HeroProps {
   onMenuClick: () => void;
 }
@@ -10,13 +11,8 @@ const Hero = ({ onMenuClick }: HeroProps) => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8">
       {/* Background Pattern */}
-      <div className="absolute inset-0 bg-gradient-to-br from-red-100 via-orange-100 to-yellow-100">
-        <div 
-          className="absolute inset-0 opacity-20" 
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ff6b35' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-          }}
-        />
+      <div className="absolute inset-0 ">
+        <img src={Image2}/>
       </div>
 
       <div className="container mx-auto text-center relative z-10">
@@ -59,14 +55,37 @@ const Hero = ({ onMenuClick }: HeroProps) => {
             <span className="hidden sm:inline">View Menu • मेनू पहा</span>
             <span className="sm:hidden">View Menu</span>
           </Button>
+
+            {/* Social Media */}
+          <div className="text-center mt-10 ">
+            <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Follow Us</h4>
+            <div className="flex justify-center  space-x-3 sm:space-x-4">
+              <a
+                href="#"
+                className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
+              >
+                <Instagram size={32} className="sm:w-10 sm:h-10" />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
+              >
+                <Facebook size={32} className="sm:w-10 sm:h-10" />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
+              >
+                <MessageCircle size={32} className="sm:w-10 sm:h-10" />
+              </a>
+             
+            </div>
+          </div>
         </div>
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-12 h-12 sm:w-20 sm:h-20 bg-yellow-400 rounded-full opacity-20 animate-pulse" />
-      <div className="absolute bottom-10 sm:bottom-20 right-5 sm:right-10 w-20 h-20 sm:w-32 sm:h-32 bg-red-400 rounded-full opacity-20 animate-pulse delay-1000" />
-      <div className="absolute top-1/2 left-2 sm:left-5 w-10 h-10 sm:w-16 sm:h-16 bg-green-400 rounded-full opacity-20 animate-pulse delay-500" />
-    </section>
+       </section>
   );
 };
 

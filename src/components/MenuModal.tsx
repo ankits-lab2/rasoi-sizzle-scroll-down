@@ -183,7 +183,7 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
       />
 
       {/* Modal */}
-      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-5xl max-h-[95vh] sm:h-[90vh]  lg:max-h-[95vh] overflow-hidden animate-scale-in">
+      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-5xl h-[90vh]  lg:max-h-[95vh] overflow-hidden animate-scale-in">
         {/* Header */}
         <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white p-4 sm:p-6 flex justify-between items-center">
           <div>

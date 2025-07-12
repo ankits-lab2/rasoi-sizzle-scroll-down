@@ -12,9 +12,9 @@ const Hero = ({ onMenuClick }: HeroProps) => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8">
       {/* Background Pattern */}
-      <div className="absolute inset-0 ">
+      <div className="absolute inset-0 h-screen ">
         <img src={image2} className='hidden md:block'/>
-        <img src={image3} className='md:hidden'/>
+        <img src={image3} className='md:hidden w-full h-full object-cover'/>
       </div>
 
       <div className="container mx-auto  text-center relative z-10">

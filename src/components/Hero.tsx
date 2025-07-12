@@ -3,6 +3,7 @@ import { Utensils, Star, Clock } from "lucide-react";
 import { Instagram, Facebook, MessageCircle, MapPin } from "lucide-react";
 import image2 from "./assests/2.png";
 import image3 from "./assests/1.png";
+import WhatsAppLink from "./WhatsAppLink";
 interface HeroProps {
   onMenuClick: () => void;
 }
@@ -81,14 +82,7 @@ const Hero = ({ onMenuClick }: HeroProps) => {
               >
                 <Facebook size={32} className="sm:w-10 sm:h-10" />
               </a> */}
-              <a
-                href="https://web.whatsapp.com/send?phone=918421801594&text=Hi%2C"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
-              >
-                <MessageCircle size={32} className="sm:w-10 sm:h-10" />
-              </a>
+              <WhatsAppLink/>
             </div>
           </div>
         </div>

@@ -201,7 +201,7 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
         </div>
 
         {/* Category Tabs */}
-        <div className="flex overflow-x-auto border-b bg-gray-50 px-2 sm:px-4 scrollbar-hide">
+        <div className="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 border-b bg-gray-50 px-2 sm:px-4 ">
           {menuData &&
             Object.entries(menuData).map(([category, items]) => {
               const Icon =

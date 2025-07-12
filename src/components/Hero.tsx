@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Utensils, Star, Clock } from 'lucide-react';
 import { Instagram, Facebook, MessageCircle, MapPin } from "lucide-react";
 import  image2  from './assests/2.png';
+import image3 from './assests/1.png';
 interface HeroProps {
   onMenuClick: () => void;
 }
@@ -12,7 +13,8 @@ const Hero = ({ onMenuClick }: HeroProps) => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8">
       {/* Background Pattern */}
       <div className="absolute inset-0 ">
-        <img src={image2}/>
+        <img src={image2} className='hidden md:block'/>
+        <img src={image3} className='md:hidden'/>
       </div>
 
       <div className="container mx-auto  text-center relative z-10">

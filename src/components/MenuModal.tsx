@@ -7,138 +7,138 @@ interface MenuModalProps {
   onClose: () => void;
 }
 
-const menuDataold = {
-  starters: [
-    {
-      name: "Bhel Puri",
-      marathi: "भेळ पुरी",
-      price: "₹120",
-      description: "Crispy puffed rice with tangy chutneys",
-    },
-    {
-      name: "Misal Pav",
-      marathi: "मिसळ पाव",
-      price: "₹150",
-      description: "Spicy curry with bread rolls",
-    },
-    {
-      name: "Vada Pav",
-      marathi: "वडा पाव",
-      price: "₹80",
-      description: "Mumbai's favorite street food",
-    },
-    {
-      name: "Kachori",
-      marathi: "कचोरी",
-      price: "₹100",
-      description: "Crispy filled pastries",
-    },
-  ],
-  mainCourse: [
-    {
-      name: "Puran Poli",
-      marathi: "पुरण पोळी",
-      price: "₹180",
-      description: "Sweet lentil stuffed flatbread",
-    },
-    {
-      name: "Bharli Vangi",
-      marathi: "भरली वांगी",
-      price: "₹220",
-      description: "Stuffed baby eggplants",
-    },
-    {
-      name: "Kolhapuri Mutton",
-      marathi: "कोल्हापुरी मटण",
-      price: "₹350",
-      description: "Spicy Kolhapuri style mutton curry",
-    },
-    {
-      name: "Pandhra Rassa",
-      marathi: "पांढरा रस्सा",
-      price: "₹280",
-      description: "White curry with coconut",
-    },
-  ],
-  breads: [
-    {
-      name: "Bhakri",
-      marathi: "भाकरी",
-      price: "₹40",
-      description: "Traditional millet flatbread",
-    },
-    {
-      name: "Chapati",
-      marathi: "चपाती",
-      price: "₹25",
-      description: "Soft wheat flatbread",
-    },
-    {
-      name: "Naan",
-      marathi: "नान",
-      price: "₹60",
-      description: "Leavened bread",
-    },
-    {
-      name: "Jowar Roti",
-      marathi: "ज्वार रोटी",
-      price: "₹35",
-      description: "Sorghum flatbread",
-    },
-  ],
-  beverages: [
-    {
-      name: "Solkadhi",
-      marathi: "सोल कढी",
-      price: "₹80",
-      description: "Coconut curry leaf drink",
-    },
-    {
-      name: "Masala Chai",
-      marathi: "मसाला चहा",
-      price: "₹40",
-      description: "Spiced tea",
-    },
-    {
-      name: "Kokum Sherbet",
-      marathi: "कोकम शरबत",
-      price: "₹70",
-      description: "Refreshing kokum drink",
-    },
-    {
-      name: "Buttermilk",
-      marathi: "ताक",
-      price: "₹50",
-      description: "Spiced yogurt drink",
-    },
-  ],
-  desserts: [
-    {
-      name: "Modak",
-      marathi: "मोदक",
-      price: "₹120",
-      description: "Steamed rice flour dumplings",
-    },
-    {
-      name: "Puran Poli",
-      marathi: "पुरण पोळी",
-      price: "₹150",
-      description: "Sweet lentil flatbread",
-    },
-    {
-      name: "Shrikhand",
-      marathi: "श्रीखंड",
-      price: "₹100",
-      description: "Sweetened yogurt dessert",
-    },
-    {
-      name: "Basundi",
-      marathi: "बासुंदी",
-      price: "₹130",
-      description: "Thick sweetened milk",
-    },
-  ],
-};
+// const menuDataold = {
+//   starters: [
+//     {
+//       name: "Bhel Puri",
+//       marathi: "भेळ पुरी",
+//       price: "₹120",
+//       description: "Crispy puffed rice with tangy chutneys",
+//     },
+//     {
+//       name: "Misal Pav",
+//       marathi: "मिसळ पाव",
+//       price: "₹150",
+//       description: "Spicy curry with bread rolls",
+//     },
+//     {
+//       name: "Vada Pav",
+//       marathi: "वडा पाव",
+//       price: "₹80",
+//       description: "Mumbai's favorite street food",
+//     },
+//     {
+//       name: "Kachori",
+//       marathi: "कचोरी",
+//       price: "₹100",
+//       description: "Crispy filled pastries",
+//     },
+//   ],
+//   mainCourse: [
+//     {
+//       name: "Puran Poli",
+//       marathi: "पुरण पोळी",
+//       price: "₹180",
+//       description: "Sweet lentil stuffed flatbread",
+//     },
+//     {
+//       name: "Bharli Vangi",
+//       marathi: "भरली वांगी",
+//       price: "₹220",
+//       description: "Stuffed baby eggplants",
+//     },
+//     {
+//       name: "Kolhapuri Mutton",
+//       marathi: "कोल्हापुरी मटण",
+//       price: "₹350",
+//       description: "Spicy Kolhapuri style mutton curry",
+//     },
+//     {
+//       name: "Pandhra Rassa",
+//       marathi: "पांढरा रस्सा",
+//       price: "₹280",
+//       description: "White curry with coconut",
+//     },
+//   ],
+//   breads: [
+//     {
+//       name: "Bhakri",
+//       marathi: "भाकरी",
+//       price: "₹40",
+//       description: "Traditional millet flatbread",
+//     },
+//     {
+//       name: "Chapati",
+//       marathi: "चपाती",
+//       price: "₹25",
+//       description: "Soft wheat flatbread",
+//     },
+//     {
+//       name: "Naan",
+//       marathi: "नान",
+//       price: "₹60",
+//       description: "Leavened bread",
+//     },
+//     {
+//       name: "Jowar Roti",
+//       marathi: "ज्वार रोटी",
+//       price: "₹35",
+//       description: "Sorghum flatbread",
+//     },
+//   ],
+//   beverages: [
+//     {
+//       name: "Solkadhi",
+//       marathi: "सोल कढी",
+//       price: "₹80",
+//       description: "Coconut curry leaf drink",
+//     },
+//     {
+//       name: "Masala Chai",
+//       marathi: "मसाला चहा",
+//       price: "₹40",
+//       description: "Spiced tea",
+//     },
+//     {
+//       name: "Kokum Sherbet",
+//       marathi: "कोकम शरबत",
+//       price: "₹70",
+//       description: "Refreshing kokum drink",
+//     },
+//     {
+//       name: "Buttermilk",
+//       marathi: "ताक",
+//       price: "₹50",
+//       description: "Spiced yogurt drink",
+//     },
+//   ],
+//   desserts: [
+//     {
+//       name: "Modak",
+//       marathi: "मोदक",
+//       price: "₹120",
+//       description: "Steamed rice flour dumplings",
+//     },
+//     {
+//       name: "Puran Poli",
+//       marathi: "पुरण पोळी",
+//       price: "₹150",
+//       description: "Sweet lentil flatbread",
+//     },
+//     {
+//       name: "Shrikhand",
+//       marathi: "श्रीखंड",
+//       price: "₹100",
+//       description: "Sweetened yogurt dessert",
+//     },
+//     {
+//       name: "Basundi",
+//       marathi: "बासुंदी",
+//       price: "₹130",
+//       description: "Thick sweetened milk",
+//     },
+//   ],
+// };
 
 const categoryIcons = {
   starters: Salad,
@@ -183,7 +183,7 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
       />
 
       {/* Modal */}
-      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-5xl max-h-[95vh] sm:max-h-[90vh] overflow-hidden animate-scale-in">
+      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-5xl max-h-[95vh] sm:h-[90vh]  lg:max-h-[95vh] overflow-hidden animate-scale-in">
         {/* Header */}
         <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white p-4 sm:p-6 flex justify-between items-center">
           <div>
@@ -257,7 +257,7 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
         </div>
 
         {/* Footer */}
-        <div className="bg-gray-50 px-4 sm:px-6 py-3 sm:py-4 text-center border-t">
+        <div className="bg-gray-50 px-4 sm:px-6 py-3 sm:py-4 text-center border-t absolute bottom-0">
           <p className="text-gray-600 text-sm sm:text-base">
             Call us for orders:{" "}
             <span className="font-semibold text-green-600">+91 8421801594</span>

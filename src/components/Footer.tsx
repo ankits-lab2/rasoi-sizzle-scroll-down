@@ -3,8 +3,8 @@ import { Instagram, Facebook, MessageCircle, MapPin } from "lucide-react";
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-red-600 to-orange-600 text-white py-8 sm:py-12">
-      <div className="container mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+      <div className="container mx-auto px-4 sm:px-6 h-fit">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-20">
           {/* Brand */}
           <div className="text-center md:text-left">
             <h3 className="text-xl sm:text-2xl font-bold mb-2">
@@ -24,12 +24,15 @@ const Footer = () => {
               Contact Us
             </h4>
             <div className="space-y-2 text-red-100 text-sm sm:text-base">
-              <p>📞 +91 98765 43210</p>
+              <p>📞 +91 8421801594</p>
               <p>📧 info@drgikirasi.com</p>
               <div className=" md:relative  flex justify-center md:justify-end">
-                <div className=" md:w-44 flex justify-center md:justify-end gap-1 md:right-0 md:absolute">
+                <div className=" md:min-w-fit flex justify-center md:justify-end gap-1 md:right-0 md:absolute">
                   <MapPin size={16} className="relative " />
-                  <span>Pune, Maharashtra</span>
+                  <div className="w-1/2">
+                    Shop 09, D.S Tupe food corner, balaji nagar, Manjari Budruk,
+                    Pune, Maharashtra 412307
+                  </div>
                 </div>
               </div>
             </div>
@@ -38,8 +41,21 @@ const Footer = () => {
 
         <div className="border-t border-red-400 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-red-100 text-sm sm:text-base">
           <p>
-            &copy; 2024 Dr. G Ki Rasoi. All rights reserved. | Made with ❤️ in
-            Maharashtra
+            &copy; 2025 Dr. G Ki Rasoi. All rights reserved. | Made with ❤️
+            
+             <a
+              href="https://www.sydnytech.com/"
+              className="text-white hover:underline"
+            >
+              Sydnytech 
+            </a>
+            {" "} X {" "}
+            <a
+              href="https://github.com/lazydev-ak"
+              className="text-white hover:underline"
+            >
+              @lazydev-ak
+            </a>
           </p>
         </div>
       </div>

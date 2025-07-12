@@ -20,7 +20,7 @@ const Hero = ({ onMenuClick }: HeroProps) => {
       <div className="container mx-auto  text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Main Title */}
-          <h1 className="text-4xl  sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-red-600 mb-3 sm:mb-4 animate-fade-in">
+          <h1 className="text-4xl  sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-bold text-red-600 mb-3 sm:mb-4 animate-fade-in">
             Dr. G Ki Rasoi
           </h1>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-orange-600 mb-4 sm:mb-6 animate-fade-in delay-200">

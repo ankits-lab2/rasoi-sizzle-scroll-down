@@ -12,41 +12,41 @@ const Hero = ({ onMenuClick }: HeroProps) => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8">
       {/* Background Pattern */}
-      <div className="absolute inset-0 h-screen ">
-        <img src={image2} className="hidden md:block" />
-        <img src={image3} className="md:hidden w-full h-full object-cover" />
+      <div className="absolute inset-0 h-screen bg-gradient-to-br from-[#ff8c00] via-[#2e7d32] to-[#121212] ">
+        {/* <img src={image2} className="hidden md:block" />
+        <img src={image3} className="md:hidden w-full h-full object-cover" /> */}
       </div>
 
       <div className="container mx-auto  text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Main Title */}
-          <h1 className="text-4xl  sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-bold text-red-600 mb-3 sm:mb-4 animate-fade-in">
-            Dr. G Ki Rasoi
+          <h1 className="text-4xl  sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-bold text-white mb-3 sm:mb-4 animate-fade-in">
+            Mango Tree Resto
           </h1>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-orange-600 mb-4 sm:mb-6 animate-fade-in delay-200">
-            डॉ. जी की रसोई
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-yellow-400 mb-4 sm:mb-6 animate-fade-in delay-200">
+            मॅंगो ट्री रेस्टो
           </h2>
 
           {/* Subtitle */}
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-6 sm:mb-8 max-w-2xl mx-auto animate-fade-in delay-300 px-4">
+          <p className="text-lg sm:text-xl md:text-2xl text-yellow-100 mb-6 sm:mb-8 max-w-2xl mx-auto animate-fade-in delay-300 px-4">
             Authentic Marathi Flavors • स्वादिष्ट महाराष्ट्रीयन जेवण
           </p>
 
           {/* Features */}
           <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-6 mb-8 sm:mb-10 animate-fade-in delay-400">
-            <div className="flex items-center justify-center space-x-2 text-green-600">
+            <div className="flex items-center justify-center space-x-2 text-lime-100">
               <Star className="fill-current" size={20} />
               <span className="font-medium text-sm sm:text-base">
                 Fresh Ingredients
               </span>
             </div>
-            <div className="flex items-center justify-center space-x-2 text-green-600">
+            <div className="flex items-center justify-center space-x-2 text-lime-100">
               <Utensils size={20} />
               <span className="font-medium text-sm sm:text-base">
                 Traditional Recipes
               </span>
             </div>
-            <div className="flex items-center justify-center space-x-2 text-green-600">
+            <div className="flex items-center justify-center space-x-2 text-lime-100">
               <Clock size={20} />
               <span className="font-medium text-sm sm:text-base">
                 Quick Service
@@ -57,7 +57,7 @@ const Hero = ({ onMenuClick }: HeroProps) => {
           {/* CTA Button */}
           <Button
             onClick={onMenuClick}
-            className="bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 animate-fade-in delay-500"
+            className="bg-gradient-to-br from-[#43a047] via-[#f57c00] to-[#1a1a1a] hover:from-red-600 hover:to-orange-600 text-white text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 animate-fade-in delay-500"
           >
             <Utensils className="mr-2 sm:mr-3" size={20} />
             <span className="hidden sm:inline">View Menu • मेनू पहा</span>
@@ -66,7 +66,7 @@ const Hero = ({ onMenuClick }: HeroProps) => {
 
           {/* Social Media */}
           <div className="text-center mt-10 ">
-            <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">
+            <h4 className="text-lg text-white sm:text-xl font-semibold mb-3 sm:mb-4">
               Follow Us
             </h4>
             <div className="flex justify-center  space-x-3 sm:space-x-4">
@@ -74,7 +74,13 @@ const Hero = ({ onMenuClick }: HeroProps) => {
                 href="https://www.instagram.com/dr.g_ki_rasoi_/#"
                 className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
               >
-                <Instagram size={32} className="sm:w-10 sm:h-10" />
+                <Instagram size={32} color="white" className="sm:w-10 sm:h-10" />
+              </a> 
+              <a
+                href="https://www.google.com/maps/dir//CRWR+W46,+Ambegaon+BK,+Pune,+Maharashtra+411046/@18.4877329,73.8432444,11z/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x3bc2958d100bb2f5:0x26bbcdcc294a3924!3e0"
+                className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
+              >
+                <MapPin size={32} color="white"  className="sm:w-10 sm:h-10" />
               </a>
               {/* <a
                 href="#"

@@ -8,10 +8,10 @@ const Footer = () => {
           {/* Brand */}
           <div className="text-center md:text-left">
             <h3 className="text-xl sm:text-2xl font-bold mb-2">
-              Dr. G Ki Rasoi
+              Mango Tree Resto
             </h3>
             <p className="text-red-100 mb-3 sm:mb-4 text-sm sm:text-base">
-              डॉ. जी की रसोई
+              मॅंगो ट्री रेस्टो
             </p>
             <p className="text-red-200 text-sm sm:text-base">
               Authentic Marathi cuisine served with love and tradition.
@@ -24,14 +24,14 @@ const Footer = () => {
               Contact Us
             </h4>
             <div className="space-y-2 text-red-100 text-sm sm:text-base">
-              <p>📞 +91 8421801594</p>
+              <p>📞 +91 7262025151</p>
               <p>📧 info@drgikirasi.com</p>
               <div className=" md:relative  flex justify-center md:justify-end">
                 <div className=" md:min-w-fit flex justify-center md:justify-end gap-1 md:right-0 md:absolute">
                   <MapPin size={16} className="relative " />
-                  <div className="w-1/2">
-                    Shop 09, D.S Tupe food corner, balaji nagar, Manjari Budruk,
-                    Pune, Maharashtra 412307
+                  <div className="w-1/3">
+                    Ambegaon Bk, Aamraai Sosayati opposite,Pune,
+                     Maharashtra 411046
                   </div>
                 </div>
               </div>
@@ -39,9 +39,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-red-400 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-red-100 text-sm sm:text-base">
+        <div className="border-t border-red-400 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-white text-sm sm:text-base">
           <p>
-            &copy; 2025 Dr. G Ki Rasoi. All rights reserved. | Made with ❤️
+            &copy; 2025 Mango Tree Resto. All rights reserved. | Made with ❤️
             
              <a
               href="https://www.sydnytech.com/"
@@ -49,13 +49,13 @@ const Footer = () => {
             >
               Sydnytech 
             </a>
-            {" "} X {" "}
+            {/* {" "} X {" "}
             <a
               href="https://github.com/lazydev-ak"
               className="text-white hover:underline"
             >
               @lazydev-ak
-            </a>
+            </a> */}
           </p>
         </div>
       </div>

@@ -23,7 +23,7 @@ const WhatsAppLink = () => {
       rel="noopener noreferrer"
       className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
     >
-      <MessageCircle size={32} className="sm:w-10 sm:h-10" />
+      <MessageCircle size={32} color="white"  className="sm:w-10 sm:h-10" />
     </a>
   );
 };

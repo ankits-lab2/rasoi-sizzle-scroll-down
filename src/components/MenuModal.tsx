@@ -185,7 +185,7 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
       {/* Modal */}
       <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-5xl h-[90vh]  lg:max-h-[95vh] overflow-hidden animate-scale-in">
         {/* Header */}
-        <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white p-4 sm:p-6 flex justify-between items-center">
+        <div className="bg-gradient-to-br from-[#ff8c00] via-[#2e7d32] to-[#121212]  text-white p-4 sm:p-6 flex justify-between items-center">
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold">Our Menu</h2>
             <p className="text-red-100 text-sm sm:text-base">आमचा मेनू</p>
@@ -260,7 +260,7 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
         <div className="bg-gray-50 px-4 sm:px-6 py-3 sm:py-4 text-center border-t absolute bottom-0">
           <p className="text-gray-600 text-sm sm:text-base">
             Call us for orders:{" "}
-            <span className="font-semibold text-green-600">+91 8421801594</span>
+            <span className="font-semibold text-green-600">+91 7262025151</span>
           </p>
         </div>
       </div>

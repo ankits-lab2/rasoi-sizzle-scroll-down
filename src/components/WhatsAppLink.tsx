@@ -6,7 +6,7 @@ const WhatsAppLink = () => {
 
   useEffect(() => {
     const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-    const number = "918421801594";
+    const number = "917262025151";
     const message = encodeURIComponent("Hi,");
 
     const url = isMobile

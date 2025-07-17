@@ -29,7 +29,7 @@ const Hero = ({ onMenuClick }: HeroProps) => {
 
           {/* Subtitle */}
           <p className="text-lg sm:text-xl md:text-2xl text-yellow-100 mb-6 sm:mb-8 max-w-2xl mx-auto animate-fade-in delay-300 px-4">
-            Authentic Marathi Flavors • स्वादिष्ट महाराष्ट्रीयन जेवण
+           तुमच्या जिभेला द्या चव आणि पोटाला द्या आनंद !
           </p>
 
           {/* Features */}
@@ -71,13 +71,13 @@ const Hero = ({ onMenuClick }: HeroProps) => {
             </h4>
             <div className="flex justify-center  space-x-3 sm:space-x-4">
               <a
-                href="https://www.instagram.com/dr.g_ki_rasoi_/#"
+                href="https://www.instagram.com/mango_tree_resto/"
                 className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
               >
                 <Instagram size={32} color="white" className="sm:w-10 sm:h-10" />
               </a> 
               <a
-                href="https://www.google.com/maps/dir//CRWR+W46,+Ambegaon+BK,+Pune,+Maharashtra+411046/@18.4877329,73.8432444,11z/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x3bc2958d100bb2f5:0x26bbcdcc294a3924!3e0"
+                href="https://maps.app.goo.gl/TfNd43Eb6HhsXbPC8"
                 className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
               >
                 <MapPin size={32} color="white"  className="sm:w-10 sm:h-10" />

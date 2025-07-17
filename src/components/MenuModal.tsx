@@ -156,7 +156,7 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
     console.log("menu Hi");
     axios
       .get(
-        "https://raw.githubusercontent.com/ankits-lab2/hotelMenus/refs/heads/main/DrGrasoi.json"
+        "https://raw.githubusercontent.com/ankits-lab2/hotelMenus/refs/heads/main/mangoTreeRestro"
       )
       .then((res) => {
         console.log("Data fetched:", res.data);

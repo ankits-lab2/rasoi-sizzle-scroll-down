@@ -3,6 +3,7 @@ import { Utensils, Star, Clock } from "lucide-react";
 import { Instagram, Facebook, MessageCircle, MapPin,Mail } from "lucide-react";
 import image2 from "./assests/2.png";
 import image3 from "./assests/1.png";
+import imageLogo from "./assests/logo.png";
 import WhatsAppLink from "./WhatsAppLink";
 interface HeroProps {
   onMenuClick: () => void;
@@ -18,6 +19,9 @@ const Hero = ({ onMenuClick }: HeroProps) => {
       </div>
 
       <div className="container mx-auto  text-center relative z-10">
+        <div className="flex justify-center text-center items-center">
+          <img src={imageLogo} className="w-40" />
+        </div>
         <div className="max-w-4xl mx-auto">
           {/* Main Title */}
           <h1 className="text-4xl  sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-bold text-white mb-3 sm:mb-4 animate-fade-in">
@@ -81,12 +85,15 @@ const Hero = ({ onMenuClick }: HeroProps) => {
                 className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
               >
                 <MapPin size={32} color="white"  className="sm:w-10 sm:h-10" />
-              </a> <a
-                href="themangohotel5151@gmail.com"
-                className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
-              >
-                <Mail size={32} color="white"  className="sm:w-10 sm:h-10" />
               </a>
+              
+              <a
+  href="mailto:themangohotel5151@gmail.com"
+  className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
+>
+  <Mail size={32} color="white" className="sm:w-10 sm:h-10" />
+</a>
+
               {/* <a
                 href="#"
                 className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"

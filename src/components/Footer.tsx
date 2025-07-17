@@ -25,7 +25,7 @@ const Footer = () => {
             </h4>
             <div className="space-y-2 text-red-100 text-sm sm:text-base">
               <p>📞 +91 7262025151</p>
-              <p>📧 info@drgikirasi.com</p>
+              <p>📧 themangohotel5151@gmail.com</p>
               <div className=" md:relative  flex justify-center md:justify-end">
                 <div className=" md:min-w-fit flex justify-center md:justify-end gap-1 md:right-0 md:absolute">
                   <MapPin size={16} className="relative " />

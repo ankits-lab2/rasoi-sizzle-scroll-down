@@ -257,12 +257,12 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
         </div>
 
         {/* Footer */}
-        <div className="bg-gray-50 px-4 sm:px-6 py-3 sm:py-4 text-center border-t absolute bottom-0">
+        {/* <div className="bg-gray-50 px-4 sm:px-6 py-3 sm:py-4 text-center border-t absolute bottom-0">
           <p className="text-gray-600 text-sm sm:text-base">
             Call us for orders:{" "}
             <span className="font-semibold text-green-600">+91 7262025151</span>
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

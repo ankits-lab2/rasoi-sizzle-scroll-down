@@ -13,6 +13,7 @@ const Header = () => {
           <div>
             <h1 className="text-xl sm:text-2xl font-bold text-red-600">Mango Tree Resto</h1>
             <p className="text-xs sm:text-sm text-gray-600">मॅंगो ट्री रेस्टो</p>
+            <p className="text-xs sm:text-sm text-gray-600">आम्ही चवीने माणसे जोडतो</p>
           </div>
         </div>
         

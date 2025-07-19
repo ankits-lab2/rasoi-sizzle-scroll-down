@@ -14,7 +14,7 @@ const Footer = () => {
               मॅंगो ट्री रेस्टो
             </p>
             <p className="text-red-200 text-sm sm:text-base">
-              Authentic Marathi cuisine served with love and tradition.
+              आम्ही चवीने माणसे जोडतो
             </p>
           </div>
 

@@ -33,7 +33,7 @@ const Hero = ({ onMenuClick }: HeroProps) => {
 
           {/* Subtitle */}
           <p className="text-lg sm:text-xl md:text-2xl text-yellow-100 mb-6 sm:mb-8 max-w-2xl mx-auto animate-fade-in delay-300 px-4">
-            तुमच्या जिभेला द्या चव आणि पोटाला द्या आनंद !
+           आम्ही चवीने माणसे जोडतो
           </p>
 
           {/* Features */}

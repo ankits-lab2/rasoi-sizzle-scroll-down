@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Utensils, Star, Clock } from "lucide-react";
-import { Instagram, Facebook, MessageCircle, MapPin,Mail } from "lucide-react";
+import { Instagram, Facebook, MessageCircle, MapPin, Mail } from "lucide-react";
 import image2 from "./assests/2.png";
 import image3 from "./assests/1.png";
 import imageLogo from "./assests/logo.png";
@@ -33,7 +33,7 @@ const Hero = ({ onMenuClick }: HeroProps) => {
 
           {/* Subtitle */}
           <p className="text-lg sm:text-xl md:text-2xl text-yellow-100 mb-6 sm:mb-8 max-w-2xl mx-auto animate-fade-in delay-300 px-4">
-           तुमच्या जिभेला द्या चव आणि पोटाला द्या आनंद !
+            तुमच्या जिभेला द्या चव आणि पोटाला द्या आनंद !
           </p>
 
           {/* Features */}
@@ -78,21 +78,25 @@ const Hero = ({ onMenuClick }: HeroProps) => {
                 href="https://www.instagram.com/mango_tree_resto/"
                 className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
               >
-                <Instagram size={32} color="white" className="sm:w-10 sm:h-10" />
-              </a> 
+                <Instagram
+                  size={32}
+                  color="white"
+                  className="sm:w-10 sm:h-10"
+                />
+              </a>
               <a
                 href="https://maps.app.goo.gl/TfNd43Eb6HhsXbPC8"
                 className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
               >
-                <MapPin size={32} color="white"  className="sm:w-10 sm:h-10" />
+                <MapPin size={32} color="white" className="sm:w-10 sm:h-10" />
               </a>
-              
+
               <a
-  href="mailto:themangohotel5151@gmail.com"
-  className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
->
-  <Mail size={32} color="white" className="sm:w-10 sm:h-10" />
-</a>
+                href="mailto:themangohotel5151@gmail.com"
+                className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
+              >
+                <Mail size={32} color="white" className="sm:w-10 sm:h-10" />
+              </a>
 
               {/* <a
                 href="#"
@@ -100,7 +104,7 @@ const Hero = ({ onMenuClick }: HeroProps) => {
               >
                 <Facebook size={32} className="sm:w-10 sm:h-10" />
               </a> */}
-              <WhatsAppLink/>
+              <WhatsAppLink />
             </div>
           </div>
         </div>

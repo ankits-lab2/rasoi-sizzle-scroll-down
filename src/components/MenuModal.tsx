@@ -201,7 +201,7 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
         </div>
 
         {/* Category Tabs */}
-        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 border-b bg-gray-50 px-2 sm:px-4 ">
+        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 border-b bg-gray-50 px-2 sm:px-4 max-h-[20vh] overflow-y-auto">
           {menuData &&
             Object.entries(menuData).map(([category, items]) => {
               const Icon =
@@ -210,7 +210,7 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
                 <button
                   key={category}
                   onClick={() => setActiveCategory(category)}
-                  className={`flex items-center space-x-1 sm:space-x-2 px-3 sm:px-6 py-3 sm:py-4 text-xs sm:text-sm font-medium  text-wrap transition-colors border-b-2 ${
+                  className={`flex items-center space-x-1 sm:space-x-2 px-3 sm:px-6 py-3 sm:py-4 text-xs sm:text-sm font-medium text-wrap transition-colors border-b-2 ${
                     activeCategory === category
                       ? "border-red-500 text-red-600 bg-white"
                       : "border-transparent text-gray-600 hover:text-red-500"

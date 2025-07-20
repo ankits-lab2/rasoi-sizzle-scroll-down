@@ -5,7 +5,7 @@ import image2 from "./assests/2.png";
 import image3 from "./assests/1.png";
 import imageLogo from "./assests/logo.png";
 import WhatsAppLink from "./WhatsAppLink";
-import { FcGoogle } from 'react-icons/fc'; // Google colored G icon
+import { FcGoogle } from "react-icons/fc"; // Google colored G icon
 
 interface HeroProps {
   onMenuClick: () => void;
@@ -75,7 +75,7 @@ const Hero = ({ onMenuClick }: HeroProps) => {
             <h4 className="text-lg text-white sm:text-xl font-semibold mb-3 sm:mb-4">
               Follow Us
             </h4>
-            <div className="flex justify-center  space-x-3 sm:space-x-4">
+            <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4">
               <a
                 href="https://www.instagram.com/mango_tree_resto/"
                 className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
@@ -86,6 +86,7 @@ const Hero = ({ onMenuClick }: HeroProps) => {
                   className="sm:w-10 sm:h-10"
                 />
               </a>
+
               <a
                 href="https://maps.app.goo.gl/TfNd43Eb6HhsXbPC8"
                 className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
@@ -99,6 +100,7 @@ const Hero = ({ onMenuClick }: HeroProps) => {
               >
                 <Mail size={32} color="white" className="sm:w-10 sm:h-10" />
               </a>
+
               <a
                 href="https://www.facebook.com/people/Mango-pune-resto/61556009189822/"
                 className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
@@ -109,23 +111,19 @@ const Hero = ({ onMenuClick }: HeroProps) => {
                   className="sm:w-10 sm:h-10"
                 />
               </a>
+
               <a
-                href="https://www.google.com/maps/place/The+mango+family+garden+restaurant/@18.4480481,73.8380348,17z/data=!4m8!3m7!1s0x3bc29589e4c6a075:0xedd12fd4068055b6!8m2!3d18.4486689!4d73.8396978!9m1!1b1!16s%2Fg%2F11spx727cc?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D"
+                href="https://maps.app.goo.gl/TfNd43Eb6HhsXbPC8"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2 border border-gray-300 bg-white p-2 rounded hover:shadow"
+                className="flex items-center gap-2 border border-gray-300 bg-white px-3 py-2 rounded hover:shadow transition-all duration-300 text-sm sm:text-base"
               >
                 <FcGoogle size={24} />
-                <span className="text-gray-800 font-medium">
+                <span className="text-gray-800 font-medium whitespace-nowrap">
                   Check Reviews
                 </span>
               </a>
-              {/* <a
-                href="#"
-                className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
-              >
-                <Facebook size={32} className="sm:w-10 sm:h-10" />
-              </a> */}
+
               <WhatsAppLink />
             </div>
           </div>

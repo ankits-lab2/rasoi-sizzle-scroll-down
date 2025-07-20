@@ -1,10 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { Utensils, Star, Clock } from "lucide-react";
+import { Utensils, Star, Clock, FacebookIcon } from "lucide-react";
 import { Instagram, Facebook, MessageCircle, MapPin, Mail } from "lucide-react";
 import image2 from "./assests/2.png";
 import image3 from "./assests/1.png";
 import imageLogo from "./assests/logo.png";
 import WhatsAppLink from "./WhatsAppLink";
+import { FcGoogle } from 'react-icons/fc'; // Google colored G icon
+
 interface HeroProps {
   onMenuClick: () => void;
 }
@@ -33,7 +35,7 @@ const Hero = ({ onMenuClick }: HeroProps) => {
 
           {/* Subtitle */}
           <p className="text-lg sm:text-xl md:text-2xl text-yellow-100 mb-6 sm:mb-8 max-w-2xl mx-auto animate-fade-in delay-300 px-4">
-           आम्ही चवीने माणसे जोडतो
+            आम्ही चवीने माणसे जोडतो
           </p>
 
           {/* Features */}
@@ -97,7 +99,27 @@ const Hero = ({ onMenuClick }: HeroProps) => {
               >
                 <Mail size={32} color="white" className="sm:w-10 sm:h-10" />
               </a>
-
+              <a
+                href="https://www.facebook.com/people/Mango-pune-resto/61556009189822/"
+                className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
+              >
+                <FacebookIcon
+                  size={32}
+                  color="white"
+                  className="sm:w-10 sm:h-10"
+                />
+              </a>
+              <a
+                href="https://www.google.com/maps/place/The+mango+family+garden+restaurant/@18.4480481,73.8380348,17z/data=!4m8!3m7!1s0x3bc29589e4c6a075:0xedd12fd4068055b6!8m2!3d18.4486689!4d73.8396978!9m1!1b1!16s%2Fg%2F11spx727cc?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 border border-gray-300 bg-white p-2 rounded hover:shadow"
+              >
+                <FcGoogle size={24} />
+                <span className="text-gray-800 font-medium">
+                  Check Reviews
+                </span>
+              </a>
               {/* <a
                 href="#"
                 className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"

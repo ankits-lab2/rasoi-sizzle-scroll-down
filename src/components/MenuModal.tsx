@@ -226,7 +226,7 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
         </div>
 
         {/* Menu Items */}
-        <div className="p-4 sm:p-6 overflow-y-auto max-h-[50vh] sm:max-h-[60vh]">
+        <div className="p-4 sm:p-6 overflow-y-auto max-h-[60vh] sm:max-h-[60vh]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4">
             {menuData?.[activeCategory as keyof typeof menuData]?.map(
               (item, index) => (

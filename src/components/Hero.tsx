@@ -7,7 +7,10 @@ import imageLogo from "./assests/logo.png";
 import WhatsAppLink from "./WhatsAppLink";
 import { FcGoogle } from "react-icons/fc"; // Google colored G icon
 import { SocialIcon } from 'react-social-icons'
-
+import instaggram from './assests/instgram.png';
+import maps from './assests/maps.png';
+import googleMaps from './assests/googleMaps.png';
+import facebook from './assests/facebook.png';
 interface HeroProps {
   onMenuClick: () => void;
 }
@@ -81,37 +84,41 @@ const Hero = ({ onMenuClick }: HeroProps) => {
                 href="https://www.instagram.com/mango_tree_resto/"
                 className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
               >
+                <img src={instaggram} alt=""/>
                 {/* <Instagram
                   size={32}
                   color="white"
                   className="sm:w-10 sm:h-10"
                 /> */}
-                <SocialIcon url="https://www.instagram.com/" />
+                {/* <SocialIcon url="https://www.instagram.com/" /> */}
               </a>
 
               <a
                 href="https://maps.app.goo.gl/TfNd43Eb6HhsXbPC8"
                 className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
               >
-                <MapPin size={32} color="white" className="sm:w-10 sm:h-10" />
+                <img src={maps} alt="" />
+                {/* <MapPin size={32} color="white" className="sm:w-10 sm:h-10" /> */}
               </a>
 
               <a
                 href="mailto:themangohotel5151@gmail.com"
                 className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
               >
-                <Mail size={32} color="white" className="sm:w-10 sm:h-10" />
+                <img src={googleMaps} alt="" />
+                {/* <Mail size={32} color="white" className="sm:w-10 sm:h-10" /> */}
               </a>
 
               <a
                 href="https://www.facebook.com/people/Mango-pune-resto/61556009189822/"
                 className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
               >
-                <FacebookIcon
+                <img src={facebook} alt="" />
+                {/* <FacebookIcon
                   size={32}
                   color="white"
                   className="sm:w-10 sm:h-10"
-                />
+                /> */}
               </a>
 
               <a

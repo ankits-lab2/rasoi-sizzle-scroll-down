@@ -6,6 +6,7 @@ import image3 from "./assests/1.png";
 import imageLogo from "./assests/logo.png";
 import WhatsAppLink from "./WhatsAppLink";
 import { FcGoogle } from "react-icons/fc"; // Google colored G icon
+import { SocialIcon } from 'react-social-icons'
 
 interface HeroProps {
   onMenuClick: () => void;
@@ -39,7 +40,7 @@ const Hero = ({ onMenuClick }: HeroProps) => {
           </p>
 
           {/* Features */}
-          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-6 mb-8 sm:mb-10 animate-fade-in delay-400">
+          {/* <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-6 mb-8 sm:mb-10 animate-fade-in delay-400">
             <div className="flex items-center justify-center space-x-2 text-lime-100">
               <Star className="fill-current" size={20} />
               <span className="font-medium text-sm sm:text-base">
@@ -58,7 +59,7 @@ const Hero = ({ onMenuClick }: HeroProps) => {
                 Quick Service
               </span>
             </div>
-          </div>
+          </div> */}
 
           {/* CTA Button */}
           <Button
@@ -80,11 +81,12 @@ const Hero = ({ onMenuClick }: HeroProps) => {
                 href="https://www.instagram.com/mango_tree_resto/"
                 className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
               >
-                <Instagram
+                {/* <Instagram
                   size={32}
                   color="white"
                   className="sm:w-10 sm:h-10"
-                />
+                /> */}
+                <SocialIcon url="https://www.instagram.com/" />
               </a>
 
               <a

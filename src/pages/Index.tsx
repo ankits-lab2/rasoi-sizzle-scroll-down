@@ -10,7 +10,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-50 to-red-50">
-      <Header />
+      {/* <Header /> */}
       <Hero onMenuClick={() => setIsMenuOpen(true)} />
       {isMenuOpen && <MenuModal onClose={() => setIsMenuOpen(false)} />}
       <Footer />

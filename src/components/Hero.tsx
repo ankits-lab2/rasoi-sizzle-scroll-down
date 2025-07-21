@@ -11,6 +11,7 @@ import instaggram from './assests/instgram.png';
 import maps from './assests/maps.png';
 import googleMaps from './assests/googleMaps.png';
 import facebook from './assests/facebook.png';
+import SpecialOffer from "./WhatsAppLinkSpicailOffer";
 interface HeroProps {
   onMenuClick: () => void;
 }
@@ -74,6 +75,7 @@ const Hero = ({ onMenuClick }: HeroProps) => {
             <span className="sm:hidden">View Menu</span>
           </Button>
 
+          <SpecialOffer/>
           {/* Social Media */}
           <div className="text-center mt-10 ">
             <h4 className="text-lg text-white sm:text-xl font-semibold mb-3 sm:mb-4">

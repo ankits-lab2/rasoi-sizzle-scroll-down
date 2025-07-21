@@ -9,7 +9,7 @@ const SpecialOffer = () => {
   useEffect(() => {
     const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
     const number = "917262025151";
-    const message = encodeURIComponent("Special Offer,");
+    const message = encodeURIComponent("Special Offer");
 
     const url = isMobile
       ? `https://wa.me/${number}?text=${message}`      // opens WhatsApp mobile app

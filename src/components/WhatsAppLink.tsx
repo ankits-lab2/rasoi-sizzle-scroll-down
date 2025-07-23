@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { MessageCircle } from "lucide-react";
-import whatsapp from './assests/whatsapp.jpeg';
+import whatsapp from './assests/whatsapp.png';
 
 const WhatsAppLink = () => {
   const [whatsappUrl, setWhatsappUrl] = useState("");
@@ -22,7 +22,7 @@ const WhatsAppLink = () => {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
+      className="w-10 h-10 sm:w-12 sm:h-12  rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
     >
       <img src={whatsapp} alt="" />
       {/* <MessageCircle size={32} color="white"  className="sm:w-10 sm:h-10" /> */}

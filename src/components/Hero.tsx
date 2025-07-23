@@ -84,7 +84,7 @@ const Hero = ({ onMenuClick }: HeroProps) => {
             <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4">
               <a
                 href="https://www.instagram.com/mango_tree_resto/"
-                className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
+                className="w-10 h-10 sm:w-12 sm:h-12  rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
               >
                 <img src={instaggram} alt=""/>
                 {/* <Instagram
@@ -97,7 +97,7 @@ const Hero = ({ onMenuClick }: HeroProps) => {
 
               <a
                 href="https://maps.app.goo.gl/TfNd43Eb6HhsXbPC8"
-                className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
+                className="w-10 h-10 sm:w-12 sm:h-12  rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
               >
                 <img src={maps} alt="" />
                 {/* <MapPin size={32} color="white" className="sm:w-10 sm:h-10" /> */}
@@ -105,7 +105,7 @@ const Hero = ({ onMenuClick }: HeroProps) => {
 
               <a
                 href="mailto:themangohotel5151@gmail.com"
-                className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
+                className="w-10 h-10 sm:w-12 sm:h-12  rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
               >
                 <img src={googleMaps} alt="" />
                 {/* <Mail size={32} color="white" className="sm:w-10 sm:h-10" /> */}
@@ -113,7 +113,7 @@ const Hero = ({ onMenuClick }: HeroProps) => {
 
               <a
                 href="https://www.facebook.com/people/Mango-pune-resto/61556009189822/"
-                className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
+                className="w-10 h-10 sm:w-12 sm:h-12  rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
               >
                 <img src={facebook} alt="" />
                 {/* <FacebookIcon

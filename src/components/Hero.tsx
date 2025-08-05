@@ -6,11 +6,11 @@ import image3 from "./assests/1.png";
 import imageLogo from "./assests/logo.png";
 import WhatsAppLink from "./WhatsAppLink";
 import { FcGoogle } from "react-icons/fc"; // Google colored G icon
-import { SocialIcon } from 'react-social-icons'
-import instaggram from './assests/instgram.png';
-import maps from './assests/maps.png';
-import googleMaps from './assests/googleMaps.png';
-import facebook from './assests/facebook.png';
+import { SocialIcon } from "react-social-icons";
+import instaggram from "./assests/instgram.png";
+import maps from "./assests/maps.png";
+import googleMaps from "./assests/googleMaps.png";
+import facebook from "./assests/facebook.png";
 import SpecialOffer from "./WhatsAppLinkSpicailOffer";
 interface HeroProps {
   onMenuClick: () => void;
@@ -75,18 +75,20 @@ const Hero = ({ onMenuClick }: HeroProps) => {
             <span className="sm:hidden">View Menu</span>
           </Button>
 
-          <SpecialOffer/>
+          <SpecialOffer />
           {/* Social Media */}
           <div className="text-center mt-10 ">
             <h4 className="text-lg text-white sm:text-xl font-semibold mb-3 sm:mb-4">
-              Follow Us
+              To Follow Us Click on Below Buttons
             </h4>
             <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4">
+                            <div className="bg-white w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center">
+
               <a
                 href="https://www.instagram.com/mango_tree_resto/"
                 className="w-10 h-10 sm:w-12 sm:h-12  rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
               >
-                <img src={instaggram} alt=""/>
+                <img src={instaggram} alt="" />
                 {/* <Instagram
                   size={32}
                   color="white"
@@ -94,6 +96,8 @@ const Hero = ({ onMenuClick }: HeroProps) => {
                 /> */}
                 {/* <SocialIcon url="https://www.instagram.com/" /> */}
               </a>
+              </div>
+              <div className="bg-white w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center">
 
               <a
                 href="https://maps.app.goo.gl/TfNd43Eb6HhsXbPC8"
@@ -102,6 +106,8 @@ const Hero = ({ onMenuClick }: HeroProps) => {
                 <img src={maps} alt="" />
                 {/* <MapPin size={32} color="white" className="sm:w-10 sm:h-10" /> */}
               </a>
+              </div>
+              <div className="bg-white w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center">
 
               <a
                 href="mailto:themangohotel5151@gmail.com"
@@ -110,18 +116,20 @@ const Hero = ({ onMenuClick }: HeroProps) => {
                 <img src={googleMaps} alt="" />
                 {/* <Mail size={32} color="white" className="sm:w-10 sm:h-10" /> */}
               </a>
-
-              <a
-                href="https://www.facebook.com/people/Mango-pune-resto/61556009189822/"
-                className="w-10 h-10 sm:w-12 sm:h-12  rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
-              >
-                <img src={facebook} alt="" />
-                {/* <FacebookIcon
+              </div>
+              <div className="bg-white w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center">
+                <a
+                  href="https://www.facebook.com/people/Mango-pune-resto/61556009189822/"
+                  className="w-10 h-10 sm:w-12 sm:h-12  rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
+                >
+                  <img src={facebook} alt="" />
+                  {/* <FacebookIcon
                   size={32}
                   color="white"
                   className="sm:w-10 sm:h-10"
                 /> */}
-              </a>
+                </a>
+              </div>
 
               <a
                 href="https://maps.app.goo.gl/TfNd43Eb6HhsXbPC8"
@@ -134,8 +142,10 @@ const Hero = ({ onMenuClick }: HeroProps) => {
                   Check Reviews
                 </span>
               </a>
+              <div className="bg-white w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center">
 
               <WhatsAppLink />
+              </div>
             </div>
           </div>
         </div>

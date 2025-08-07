@@ -341,7 +341,7 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
                 {currentMenuData[activeCategory]?.map((item, index) => (
                   <div
                     key={index}
-                    className="bg-gradient-to-br from-orange-50 to-red-50 border border-orange-200 rounded-xl p-2 px-4  lg:p-4 hover:shadow-lg transition-all duration-300"
+                    className="bg-gradient-to-br from-orange-50 to-red-50 border border-orange-200 rounded-xl p-2 px-4  hover:shadow-lg transition-all duration-300"
                   >
                     <div className="flex justify-center items-center">
                       <div className="flex-1 pr-2">

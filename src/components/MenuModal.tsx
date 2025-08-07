@@ -1,7 +1,16 @@
 import { useEffect, useState } from "react";
-import { X, Coffee, Salad, Cookie, Wine, Cake, HelpCircle, ChevronRight, ArrowLeft } from "lucide-react";
+import {
+  X,
+  Coffee,
+  Salad,
+  Cookie,
+  Wine,
+  Cake,
+  HelpCircle,
+  ChevronRight,
+  ArrowLeft,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 
 interface MenuModalProps {
   onClose: () => void;
@@ -38,7 +47,7 @@ const categoryIcons = {
   coldBeverages: Wine,
   mastaniAndFalooda: Wine,
   sizzlers: Coffee,
-  
+
   // Non-veg categories
   chickenStarters: Coffee,
   chickenTandoor: Coffee,
@@ -55,7 +64,7 @@ const categoryIcons = {
 const MenuModal = ({ onClose }: MenuModalProps) => {
   const [activeCategory, setActiveCategory] = useState("");
   const [menuData, setMenuData] = useState<MenuData | null>(null);
-  const [menuType, setMenuType] = useState<'veg' | 'nonVeg'>('veg');
+  const [menuType, setMenuType] = useState<"veg" | "nonVeg">("veg");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [showCategories, setShowCategories] = useState(false);
@@ -66,10 +75,10 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    
+
     checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
   useEffect(() => {
@@ -107,14 +116,14 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
   const currentMenuData = menuData?.[menuType];
 
   // Handle menu type switching with proper logging
-  const handleMenuTypeChange = (type: 'veg' | 'nonVeg') => {
+  const handleMenuTypeChange = (type: "veg" | "nonVeg") => {
     console.log(`Switching from ${menuType} to ${type}`);
-    console.log('Menu data available:', !!menuData);
-    console.log('Target menu data available:', !!menuData?.[type]);
-    
+    console.log("Menu data available:", !!menuData);
+    console.log("Target menu data available:", !!menuData?.[type]);
+
     setMenuType(type);
     setShowCategories(false);
-    
+
     // Force category reset after menu type change
     if (menuData && menuData[type]) {
       const categories = Object.keys(menuData[type]);
@@ -131,17 +140,19 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
   };
 
   const getCategoryDisplayName = (category: string) => {
-    return category.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase());
+    return category
+      .replace(/([A-Z])/g, " $1")
+      .replace(/^./, (str) => str.toUpperCase());
   };
 
   // Debug current state
-  console.log('Current state:', {
+  console.log("Current state:", {
     menuType,
     activeCategory,
     hasMenuData: !!menuData,
     hasCurrentMenuData: !!currentMenuData,
     vegAvailable: !!menuData?.veg,
-    nonVegAvailable: !!menuData?.nonVeg
+    nonVegAvailable: !!menuData?.nonVeg,
   });
 
   return (
@@ -174,23 +185,27 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
         <div className="flex justify-center bg-gray-50 py-3 border-b">
           <div className="flex bg-white rounded-lg p-1 shadow-md">
             <button
-              onClick={() => handleMenuTypeChange('veg')}
+              onClick={() => handleMenuTypeChange("veg")}
               className={`px-4 py-2 rounded-md font-medium transition-all duration-200 text-sm md:text-base ${
-                menuType === 'veg'
-                  ? 'bg-green-500 text-white shadow-md'
-                  : 'text-green-600 hover:bg-green-50'
+                menuType === "veg"
+                  ? "bg-green-500 text-white shadow-md"
+                  : "text-green-600 hover:bg-green-50"
               }`}
               disabled={loading}
             >
               🥬 Vegetarian
             </button>
             <button
-              onClick={() => handleMenuTypeChange('nonVeg')}
+              onClick={() => handleMenuTypeChange("nonVeg")}
               className={`px-4 py-2 rounded-md font-medium transition-all duration-200 text-sm md:text-base ${
-                menuType === 'nonVeg'
-                  ? 'bg-red-500 text-white shadow-md'
-                  : 'text-red-600 hover:bg-red-50'
-              } ${!menuData?.nonVeg && !loading ? 'opacity-50 cursor-not-allowed' : ''}`}
+                menuType === "nonVeg"
+                  ? "bg-red-500 text-white shadow-md"
+                  : "text-red-600 hover:bg-red-50"
+              } ${
+                !menuData?.nonVeg && !loading
+                  ? "opacity-50 cursor-not-allowed"
+                  : ""
+              }`}
               disabled={loading}
             >
               🍖 Non-Vegetarian
@@ -199,7 +214,7 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
         </div>
 
         {/* Mobile Category Selector */}
-        {isMobile && currentMenuData && (
+        {/* {isMobile && currentMenuData && (
           <div className="bg-white border-b p-3">
             <button
               onClick={() => setShowCategories(true)}
@@ -217,10 +232,45 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
               <ChevronRight size={18} />
             </button>
           </div>
-        )}
+        )} */}
+
+        {/* Desktop and mobile category combine */}
+
+       
+          <div
+            className="bg-gray-50 border-b overflow-hidden"
+            style={{ height: "100px" }}
+          >
+            <div className="flex space-x-2 p-3 overflow-x-auto scrollbar-hide h-full">
+              {currentMenuData &&
+                Object.entries(currentMenuData).map(([category, items]) => {
+                  const Icon =
+                    categoryIcons[category as keyof typeof categoryIcons] ||
+                    Salad;
+                  const displayName = getCategoryDisplayName(category);
+
+                  return (
+                    <button
+                      key={category}
+                      onClick={() => setActiveCategory(category)}
+                      className={`flex flex-col items-center justify-center space-y-1 px-3 py-2 text-xs font-medium transition-all duration-200 rounded-lg border-2 min-w-fit whitespace-nowrap ${
+                        activeCategory === category
+                          ? "border-red-500 text-red-600 bg-white shadow-md"
+                          : "border-transparent text-gray-600 hover:text-red-500 hover:bg-white hover:border-red-200"
+                      }`}
+                    >
+                      <Icon size={16} className="flex-shrink-0" />
+                      <span className="text-center leading-tight">
+                        {displayName}
+                      </span>
+                    </button>
+                  );
+                })}
+            </div>
+          </div>
 
         {/* Desktop Category Tabs */}
-        {!isMobile && (
+        {/* {!isMobile && (
           <div className="bg-gray-50 border-b overflow-hidden" style={{ height: '100px' }}>
             <div className="flex space-x-2 p-3 overflow-x-auto scrollbar-hide h-full">
               {currentMenuData &&
@@ -247,10 +297,15 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
                 })}
             </div>
           </div>
-        )}
+        )} */}
 
         {/* Menu Items */}
-        <div className="flex-1 overflow-y-auto" style={{ height: isMobile ? 'calc(100vh - 180px)' : 'calc(95vh - 280px)' }}>
+        <div
+          className="flex-1 overflow-y-auto"
+          style={{
+            height: isMobile ? "calc(100vh - 180px)" : "calc(95vh - 280px)",
+          }}
+        >
           <div className="p-4">
             {loading ? (
               <div className="flex items-center justify-center h-64">
@@ -263,8 +318,8 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
               <div className="flex items-center justify-center h-64">
                 <div className="text-center">
                   <p className="text-red-500 text-lg mb-4">{error}</p>
-                  <Button 
-                    onClick={() => window.location.reload()} 
+                  <Button
+                    onClick={() => window.location.reload()}
                     className="bg-red-500 hover:bg-red-600 text-white"
                   >
                     Try Again
@@ -275,7 +330,9 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
               <div className="flex items-center justify-center h-64">
                 <div className="text-center">
                   <p className="text-gray-500 text-lg">
-                    {menuType === 'nonVeg' ? 'Non-vegetarian menu not available!' : 'No menu data available'}
+                    {menuType === "nonVeg"
+                      ? "Non-vegetarian menu not available!"
+                      : "No menu data available"}
                   </p>
                 </div>
               </div>
@@ -284,9 +341,9 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
                 {currentMenuData[activeCategory]?.map((item, index) => (
                   <div
                     key={index}
-                    className="bg-gradient-to-br from-orange-50 to-red-50 border border-orange-200 rounded-xl p-4 hover:shadow-lg transition-all duration-300"
+                    className="bg-gradient-to-br from-orange-50 to-red-50 border border-orange-200 rounded-xl p-2 px-4  lg:p-4 hover:shadow-lg transition-all duration-300"
                   >
-                    <div className="flex justify-between items-start mb-2">
+                    <div className="flex justify-center items-center">
                       <div className="flex-1 pr-2">
                         <h3 className="text-base font-semibold text-gray-800 leading-tight">
                           {item.name}
@@ -301,7 +358,7 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
                         {item.price}
                       </span>
                     </div>
-                    {item.description && (
+                    {item.description !== null || item.description !== undefined && (
                       <p className="text-gray-600 text-sm leading-relaxed">
                         {item.description}
                       </p>
@@ -309,7 +366,9 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
                   </div>
                 )) || (
                   <div className="col-span-full text-center py-8">
-                    <p className="text-gray-500">No items available in this category</p>
+                    <p className="text-gray-500">
+                      No items available in this category
+                    </p>
                   </div>
                 )}
               </div>
@@ -318,7 +377,7 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
         </div>
 
         {/* Mobile Categories Popup */}
-        {showCategories && isMobile && (
+        {/* {showCategories && isMobile && (
           <div className="fixed inset-0 z-60 bg-black bg-opacity-50 flex items-end">
             <div className="bg-white w-full rounded-t-2xl max-h-[80vh] overflow-hidden">
               <div className="flex justify-between items-center p-4 border-b bg-gray-50">
@@ -366,10 +425,10 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
               </div>
             </div>
           </div>
-        )}
+        )}*/}
       </div>
 
-      <style >{`
+      <style>{`
         .scrollbar-hide {
           -ms-overflow-style: none;
           scrollbar-width: none;

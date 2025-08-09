@@ -110,7 +110,7 @@ const Hero = ({ onMenuClick }: HeroProps) => {
               <div className="bg-white w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center">
 
               <a
-                href="mailto:themangohotel5151@gmail.com"
+                href="mailto:mangotreeresturant2024@gmail.com"
                 className="w-10 h-10 sm:w-12 sm:h-12  rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
               >
                 <img src={googleMaps} alt="" />

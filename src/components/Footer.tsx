@@ -21,7 +21,7 @@ const Footer = () => {
 
             <p className="text-red-100 text-sm sm:text-base">📞 +91 7262025151</p>
             <p className="text-red-100 text-sm sm:text-base">
-              📧 themangohotel5151@gmail.com
+              📧 mangotreeresturant2024@gmail.com
             </p>
 
             <div className="flex flex-col items-center md:items-end">

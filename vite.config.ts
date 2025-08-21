@@ -18,5 +18,5 @@ export default defineConfig(({ mode }) => ({
     },
   },
   // 👇 IMPORTANT: add base for GitHub Pages
-  base: mode === "development" ? "/" : "/your-repo-name/",
+  base: mode === "development" ? "/" : "/mangotree/",
 }));

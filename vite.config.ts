@@ -17,6 +17,4 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // 👇 IMPORTANT: add base for GitHub Pages
-  base: mode === "development" ? "/" : "/mangotree/",
 }));

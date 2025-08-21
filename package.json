@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ankits-lab2.github.io/mangotree/",
+  "homepage": "https://ankits-lab2.github.io/mangotree",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

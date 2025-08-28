@@ -11,8 +11,8 @@ const Header = () => {
             <img src={Logo} className='w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center' />
           </div>
           <div>
-            <h1 className="text-xl sm:text-2xl font-bold text-red-600">Mango Tree Resto</h1>
-            <p className="text-xs sm:text-sm text-gray-600">मॅंगो ट्री रेस्टो</p>
+            <h1 className="text-xl sm:text-2xl font-bold text-red-600">Shree Vitthal Pure Veg</h1>
+            <p className="text-xs sm:text-sm text-gray-600">श्री विठ्ठल शुद्ध शाकाहारी</p>
             <p className="text-xs sm:text-sm text-gray-600">आम्ही चवीने माणसे जोडतो</p>
           </div>
         </div>
@@ -20,7 +20,7 @@ const Header = () => {
         <div className="flex items-center space-x-2 sm:space-x-4">
           <div className="hidden lg:flex items-center space-x-2 text-green-600">
             <Phone size={18} />
-            <span className="font-semibold">+91 7262025151</span>
+            <span className="font-semibold">+917043433009</span>
           </div>
           {/* <button className="lg:hidden p-2 text-red-600">
             <Menu size={24} />

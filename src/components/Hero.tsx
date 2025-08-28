@@ -20,7 +20,7 @@ const Hero = ({ onMenuClick }: HeroProps) => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8">
       {/* Background Pattern */}
-      <div className="absolute inset-0 h-screen bg-gradient-to-br from-[#ff8c00] via-[#2e7d32] to-[#121212] ">
+      <div className="absolute inset-0 h-screen  bg-gradient-to-r from-yellow-400 via-red-400 to-pink-500 ">
         {/* <img src={image2} className="hidden md:block" />
         <img src={image3} className="md:hidden w-full h-full object-cover" /> */}
       </div>
@@ -32,10 +32,10 @@ const Hero = ({ onMenuClick }: HeroProps) => {
         <div className="max-w-4xl mx-auto">
           {/* Main Title */}
           <h1 className="text-4xl  sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-bold text-white mb-3 sm:mb-4 animate-fade-in">
-            Mango Tree Resto
+            Shree Vitthal Pure Veg
           </h1>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-yellow-400 mb-4 sm:mb-6 animate-fade-in delay-200">
-            मॅंगो ट्री रेस्टो
+           श्री विठ्ठल शुद्ध शाकाहारी
           </h2>
 
           {/* Subtitle */}
@@ -66,14 +66,14 @@ const Hero = ({ onMenuClick }: HeroProps) => {
           </div> */}
 
           {/* CTA Button */}
-          <Button
+          {/* <Button
             onClick={onMenuClick}
             className="bg-gradient-to-br from-[#43a047] via-[#f57c00] to-[#1a1a1a] hover:from-red-600 hover:to-orange-600 text-white text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 animate-fade-in delay-500"
           >
             <Utensils className="mr-2 sm:mr-3" size={20} />
             <span className="hidden sm:inline">View Menu • मेनू पहा</span>
             <span className="sm:hidden">View Menu</span>
-          </Button>
+          </Button> */}
 
           <SpecialOffer />
           {/* Social Media */}
@@ -85,7 +85,7 @@ const Hero = ({ onMenuClick }: HeroProps) => {
                             <div className="bg-white w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center">
 
               <a
-                href="https://www.instagram.com/mango_tree_resto/"
+                href="https://www.instagram.com/shreevitthalpureveg"
                 className="w-10 h-10 sm:w-12 sm:h-12  rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
               >
                 <img src={instaggram} alt="" />
@@ -100,26 +100,25 @@ const Hero = ({ onMenuClick }: HeroProps) => {
               <div className="bg-white w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center">
 
               <a
-                href="https://maps.app.goo.gl/TfNd43Eb6HhsXbPC8"
+                href="https://maps.app.goo.gl/LUw6sXYdAUzHwGAt9"
                 className="w-10 h-10 sm:w-12 sm:h-12  rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
               >
                 <img src={maps} alt="" />
                 {/* <MapPin size={32} color="white" className="sm:w-10 sm:h-10" /> */}
               </a>
               </div>
-              <div className="bg-white w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center">
-
+              {/* <div className="bg-white w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center">
               <a
                 href="mailto:mangotreeresturant2024@gmail.com"
                 className="w-10 h-10 sm:w-12 sm:h-12  rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
               >
                 <img src={googleMaps} alt="" />
-                {/* <Mail size={32} color="white" className="sm:w-10 sm:h-10" /> */}
               </a>
-              </div>
+              </div> */}
+                {/* <Mail size={32} color="white" className="sm:w-10 sm:h-10" /> */}
               <div className="bg-white w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center">
                 <a
-                  href="https://www.facebook.com/people/Mango-pune-resto/61556009189822/"
+                  href="https://www.facebook.com/share/1BSZzzgeUT/?mibextid=wwXIfr"
                   className="w-10 h-10 sm:w-12 sm:h-12  rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110"
                 >
                   <img src={facebook} alt="" />
@@ -132,7 +131,7 @@ const Hero = ({ onMenuClick }: HeroProps) => {
               </div>
 
               <a
-                href="https://maps.app.goo.gl/TfNd43Eb6HhsXbPC8"
+                href="https://maps.app.goo.gl/LUw6sXYdAUzHwGAt9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 border border-gray-300 bg-white px-3 py-2 rounded hover:shadow transition-all duration-300 text-sm sm:text-base"

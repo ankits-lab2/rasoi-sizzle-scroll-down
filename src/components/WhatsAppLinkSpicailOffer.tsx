@@ -8,7 +8,7 @@ const SpecialOffer = () => {
 
   useEffect(() => {
     const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-    const number = "917262025151";
+    const number = "917043433001";
     const message = encodeURIComponent("Special Offer");
 
     const url = isMobile

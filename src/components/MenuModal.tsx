@@ -85,7 +85,7 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
     console.log("Fetching menu data...");
     setLoading(true);
     fetch(
-      "https://raw.githubusercontent.com/ankits-lab2/hotelMenus/refs/heads/main/mangoTreeRestro"
+      "https://raw.githubusercontent.com/ankits-lab2/hotelMenus/refs/heads/main/ShreeVitthalRestro.json"
     )
       .then((response) => response.json())
       .then((data) => {
@@ -182,7 +182,7 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
         </div>
 
         {/* Veg/Non-Veg Toggle Buttons */}
-        <div className="flex justify-center bg-gray-50 py-3 border-b">
+        {/* <div className="flex justify-center bg-gray-50 py-3 border-b">
           <div className="flex bg-white rounded-lg p-1 shadow-md">
             <button
               onClick={() => handleMenuTypeChange("veg")}
@@ -211,7 +211,7 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
               🍖 Non-Vegetarian
             </button>
           </div>
-        </div>
+        </div> */}
 
         {/* Mobile Category Selector */}
         {/* {isMobile && currentMenuData && (
@@ -358,9 +358,13 @@ const MenuModal = ({ onClose }: MenuModalProps) => {
                         {item.price}
                       </span>
                     </div>
-                    {item.description !== null || item.description !== undefined && (
+                    {item.description !== null || item.description !== undefined ? (
                       <p className="text-gray-600 text-sm leading-relaxed">
                         {item.description}
+                      </p>
+                    ):(
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        &nbsp;
                       </p>
                     )}
                   </div>

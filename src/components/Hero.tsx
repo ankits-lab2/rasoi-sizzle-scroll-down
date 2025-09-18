@@ -66,14 +66,14 @@ const Hero = ({ onMenuClick }: HeroProps) => {
           </div> */}
 
           {/* CTA Button */}
-          {/* <Button
+          <Button
             onClick={onMenuClick}
             className="bg-gradient-to-br from-[#43a047] via-[#f57c00] to-[#1a1a1a] hover:from-red-600 hover:to-orange-600 text-white text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 animate-fade-in delay-500"
           >
             <Utensils className="mr-2 sm:mr-3" size={20} />
             <span className="hidden sm:inline">View Menu • मेनू पहा</span>
             <span className="sm:hidden">View Menu</span>
-          </Button> */}
+          </Button>
 
           <SpecialOffer />
           {/* Social Media */}
